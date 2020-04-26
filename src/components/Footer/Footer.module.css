@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    color: #222;
+    display: flex;
+
+}
+
+.footer p {
+    margin: 1rem;
+}
+
+.footer a {
+    color: #222;
+    text-decoration: none;
+}
