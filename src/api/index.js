@@ -22,7 +22,7 @@ export const fetchDailyGlobalData = async () => {
 export const fetchDailiesData = async () => {
   try {
     const rec = async (x = {}) => {
-      if (startDate.month === 4 && startDate.day === 25) {
+      if (startDate.month === 4 && startDate.day === 26) {
         return x;
       } else {
         const res = await fetch(
