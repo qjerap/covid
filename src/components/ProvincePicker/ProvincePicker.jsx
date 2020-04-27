@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from './ProvincePicker.module.css';
 
 const ProvincePicker = ({handleProvincePick, dataLoaded}) => {
-  console.log(dataLoaded);
 
   return (
 

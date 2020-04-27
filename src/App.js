@@ -37,7 +37,6 @@ class App extends React.Component {
       ...this.state,
       province: e.target.value
     });
-    console.log(this.state.province);
   }
 
   render() {

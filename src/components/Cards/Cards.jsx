@@ -70,15 +70,6 @@ const Cards = ({ globalData, dailiesData, province }) => {
             ].province[province].deaths
           : "/"
       });
-      console.log(
-        dailiesData[
-          Object.keys(dailiesData)[Object.keys(dailiesData).length - 2]
-        ].province[province]
-          ? dailiesData[
-              Object.keys(dailiesData)[Object.keys(dailiesData).length - 2]
-            ].province[province].confirmed
-          : "/"
-      );
     }
   }, [globalData, province]);
 

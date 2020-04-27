@@ -1,9 +1,16 @@
 const url = "https://covid19.mathdro.id/api";
+
 const startDate = {
   day: 10,
   month: 3,
   year: 2020
 };
+
+const d = new Date;
+const ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(d);
+const mo = new Intl.DateTimeFormat("en", { month: "2-digit" }).format(d);
+const da = new Intl.DateTimeFormat("en", { day: "2-digit" }).format(d);
+
 
 export const fetchDailyGlobalData = async () => {
   try {
@@ -22,7 +29,8 @@ export const fetchDailyGlobalData = async () => {
 export const fetchDailiesData = async () => {
   try {
     const rec = async (x = {}) => {
-      if (startDate.month === 4 && startDate.day === 26) {
+
+      if (startDate.month === Number(mo) && startDate.day === Number(da)) {
         return x;
       } else {
         const res = await fetch(
