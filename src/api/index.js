@@ -72,7 +72,7 @@ export const fetchDailiesData = async () => {
         };
 
         startDate.day += 1;
-        if (startDate.day === 32) {
+        if (startDate.day === 30) {
           startDate.day = 1;
           startDate.month += 1;
         }
